@@ -1,0 +1,88 @@
+#grid {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  /* height: 300px;  */
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-template-rows: 3;
+}
+.gridContainer {
+  display: flex;
+  text-align: center;
+}
+body {
+  background-color: rgb(88, 33, 33);
+  color: white;
+  text-align: center;
+}
+.hoverEffect:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.hole {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.hole:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.playAgainWrapper {
+  text-align: center;
+}
+.start {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.start:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+h3 {
+  font-size: 200%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.topScoresContainer {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+}
+#topScores {
+  color: white;
+}
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  display: inline-block;
+}
+button {
+  margin: 5px 5px 5px 15px;
+  background-color: orangered;
+  border: none;
+  color: black;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50%;
+}
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.buttons-wrapper {
+  text-align: center;
+  /* margin-bottom: 15px; */
+  color: white;
+}

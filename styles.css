@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.hoverEffect:hover {
+  transform: scale(1.1);
+}
+.grid {
+  display: grid;
+  /* justify-items: center; */
+  grid-template-columns: 33% 33% 33%;
+}
+.option {
+  font-weight: bold;
+  color: beige;
+  align-self: end;
+}
+.game2 {
+  margin-top: 18%;
+}

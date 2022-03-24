@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Score: <span id="result"></span></h3>
+    <div id="scoreContainer">
+      <span id="score"></span>
+    </div>
+    <div class="buttons-wrapper">
+      <h4>Music controls</h4>
+      <div class="buttons">
+        <button onclick="volumeUp()">+</button
+        ><button onclick="volumeDown()">-</button
+        ><button onclick="stopMusic()">stop</button>
+        <button onclick="playMusic()">play</button>
+        <button onclick="goHome()">Home</button>
+      </div>
+    </div>
+    <div id="start">
+      <img src="images/start.png" id="startImg" class="start" />
+    </div>
+    <div class="playAgainWrapper">
+      <div id="playAgain"></div>
+    </div>
+    <div class="gridContainer">
+      <div id="grid"></div>
+    </div>
+    <div class="topScoresContainer">
+      Top Scores:
+      <div id="topScores"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
