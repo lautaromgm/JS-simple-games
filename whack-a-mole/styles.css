@@ -42,7 +42,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40vw;
 }
 .start:hover {
   cursor: pointer;
@@ -50,7 +50,7 @@ body {
 }
 
 h3 {
-  font-size: 200%;
+  font-size: 1rem;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -58,7 +58,7 @@ h3 {
 .topScoresContainer {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 150%;
+  font-size: 0.7rem;
 }
 #topScores {
   color: white;
@@ -74,11 +74,11 @@ button {
   background-color: orangered;
   border: none;
   color: black;
-  padding: 7px 16px;
+  padding: 0.2rem 0.4rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.2em;
   border-radius: 50%;
 }
 button:hover {
