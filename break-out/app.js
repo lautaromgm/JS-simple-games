@@ -1,6 +1,6 @@
 //self-explanatory variables of utility
 const grid = document.querySelector(".grid");
-let ballPositionX = 300;
+let ballPositionX = Math.random() * (450 - 150) + 150;
 let ballPositionY = 45;
 let ballDirectionX = 2;
 let ballDirectionY = 2;
@@ -84,16 +84,16 @@ document
   .addEventListener("click", () => startGame(14));
 document
   .getElementById("startMedium")
-  .addEventListener("click", () => startGame(11));
+  .addEventListener("click", () => startGame(8));
 document
   .getElementById("startHard")
-  .addEventListener("click", () => startGame(8));
+  .addEventListener("click", () => startGame(6));
 document
   .getElementById("startVeryHard")
   .addEventListener("click", () => startGame(5));
 document.getElementById("Home").addEventListener("click", () => goHome());
 
-//start and stop the game(stopping and deleting all interval functions and blocks created)
+//start and stop the game(deletes all interval functions and blocks)
 //depending on flag "playOnClick"
 function startGame(difficulty) {
   if (playOnClick == 1) {
@@ -126,7 +126,7 @@ function startGame(difficulty) {
     }
     let nestedBall = document.querySelector(".ball");
     grid.removeChild(nestedBall);
-    ballPositionX = 300;
+    ballPositionX = Math.random() * (450 - 150) + 150;
     ballPositionY = 45;
     ballDirectionX = 2;
     ballDirectionY = 2;
