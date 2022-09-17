@@ -67,9 +67,12 @@ function createBoard() {
     const hole = document.createElement("img");
     hole.setAttribute("src", "images/hidden.png");
     hole.setAttribute("id", i);
+    hole.setAttribute("class", "grid-img");
+    hole.setAttribute("style", "max-width: 100%; height:auto");
     hole.addEventListener("mousedown", hit);
     hole.className = "hole";
-    gridDisplay.append(hole);
+    const imgId = document.querySelector(`#pos${i}`);
+    imgId.append(hole);
   }
   setTimeout(popUp, 1200);
 }
