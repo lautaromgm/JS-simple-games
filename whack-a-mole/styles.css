@@ -1,8 +1,8 @@
 #grid {
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
-  /* height: 300px;  */
+  /* height: 50vh; */
+  width: 60vh;
   display: grid;
   grid-template-columns: 31% 31% 31%;
   grid-template-rows: 3;
@@ -10,6 +10,10 @@
 .gridContainer {
   display: flex;
   text-align: center;
+}
+.grid-img {
+  max-width: 100%;
+  height: auto;
 }
 body {
   background-color: rgb(88, 33, 33);
