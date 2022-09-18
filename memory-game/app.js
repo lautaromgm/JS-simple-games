@@ -103,9 +103,11 @@ function createBoard() {
     card.setAttribute("src", "images/blank.png");
     card.setAttribute("data-id", i);
     card.setAttribute("id", `card${i}`);
+    card.setAttribute("style", "max-width: 90%; height:auto");
     card.addEventListener("mousedown", flipCard);
     card.className = "card";
-    gridDisplay.append(card);
+    const imgId = document.querySelector(`#pos${i}`);
+    imgId.append(card);
   }
 }
 
@@ -139,8 +141,7 @@ function checkMatch() {
     const playAgain = document.createElement("img");
     playAgain.setAttribute("src", "images/playagain.png");
     playAgain.setAttribute("id", "playAgainImg");
-    playAgain.setAttribute("width", "400px");
-    playAgain.setAttribute("height", "230px");
+    playAgain.setAttribute("style", "max-width: 90%");
     playAgain.className = "hoverEffect";
 
     for (let i = 0; i < cardArray.length; i++) {
