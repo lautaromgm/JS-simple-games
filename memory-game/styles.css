@@ -1,18 +1,26 @@
 #grid {
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
+  /* width: 60vh; */
   /* height: 300px; */
   display: grid;
   grid-template-columns: 31% 31% 31%;
   grid-template-rows: 3;
+  overflow: auto;
+  resize: vertical;
+  max-width: 60vh;
 }
+.gridParent {
+  text-align: center;
+  display: flex;
+}
+
 body {
   background-color: black;
   text-align: center;
 }
 h3 {
-  font-size: 200%;
+  font-size: 3vh;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -21,7 +29,7 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40vh;
 }
 .start:hover {
   cursor: pointer;
@@ -49,8 +57,9 @@ h3 {
   cursor: pointer;
 }
 .buttons-wrapper {
+  font-size: 3vh;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 2vw;
   color: white;
 }
 .buttons {
@@ -60,7 +69,7 @@ h3 {
   display: inline-block;
 }
 button {
-  margin: 5px 5px 5px 15px;
+  margin: 1vw 1vw 1vw 2vw;
   background-color: orangered;
   border: none;
   color: black;
@@ -68,12 +77,8 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 2vw;
   border-radius: 50%;
-}
-.gridParent {
-  text-align: center;
-  display: flex;
 }
 button:hover {
   transform: scale(1.2);
