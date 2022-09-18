@@ -9,6 +9,7 @@
   overflow: auto;
   resize: vertical;
   max-width: 60vh;
+  margin-top: 10vh;
 }
 .gridParent {
   text-align: center;
@@ -73,12 +74,18 @@ button {
   background-color: orangered;
   border: none;
   color: black;
-  padding: 7px 16px;
+  padding: 0.438rem 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 2vw;
   border-radius: 50%;
+  font-weight: bold;
+}
+@media screen and (min-width: 800px) {
+  button {
+    font-size: 15px;
+  }
 }
 button:hover {
   transform: scale(1.2);
