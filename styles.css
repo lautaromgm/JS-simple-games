@@ -23,7 +23,7 @@ body {
 .image{
   width: 18vw; height: auto
 }
-@media screen (max-width 600px){
+@media (max-width 600px){
   .image{
   width: 108px; height: auto
   }
