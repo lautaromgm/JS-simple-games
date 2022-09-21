@@ -20,3 +20,11 @@ body {
 .game2 {
   margin-top: 18%;
 }
+.image{
+  width: 18vw; height: auto
+}
+@media screen (max-width 600px){
+  .image{
+  width: 108px; height: auto
+  }
+}
