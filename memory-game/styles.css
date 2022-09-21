@@ -80,11 +80,7 @@ button {
   font-size:calc(6px + 1.5vw);
   border-radius: 50%;
 }
-@media screen and (min-width: 800px) {
-  button {
-    font-size: 15px;
-  }
-}
+
 button:hover {
   transform: scale(1.2);
   cursor: pointer;
