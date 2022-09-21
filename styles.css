@@ -23,7 +23,7 @@ body {
 .image:hover {
   transform: scale(1.1);
 }
-@media (min-width 600px){
+@media (min-width: 600px){
   .image{
   width: 108px; height: auto
   }
