@@ -58,7 +58,7 @@ h3 {
   cursor: pointer;
 }
 .buttons-wrapper {
-  font-size: 3vh;
+  font-size:calc(12px + 1.5vw);
   text-align: center;
   margin-bottom: 2vw;
   color: white;
