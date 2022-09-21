@@ -78,7 +78,7 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2vw;
+  font-size:calc(35px + 2vw);
   border-radius: 50%;
   font-weight: bold;
 }
