@@ -70,17 +70,16 @@ h3 {
   display: inline-block;
 }
 button {
-  margin: 1vw 1vw 1vw 2vw;
+  margin: 5px 5px 5px 15px;
   background-color: orangered;
   border: none;
   color: black;
-  padding: 0.438rem 1rem;
+  padding: 0.2rem 0.4rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size:calc(6px + 1.5vw);
   border-radius: 50%;
-  font-weight: bold;
 }
 @media screen and (min-width: 800px) {
   button {
