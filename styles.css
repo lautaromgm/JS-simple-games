@@ -9,27 +9,34 @@ body {
   /* justify-items: center; */
   grid-template-columns: 33% 33% 33%;
 }
+
 .option {
   font-weight: bold;
   color: beige;
   align-self: end;
 }
-@media (max-width: 400px){
-  .option{
-    font-size: 0.7rem;
-  }
-}  
+
 .game2 {
-  margin-top: 18%;
+  margin-top: 15%;
 }
-.image{
-  width: 18vw; height: auto
+.image {
+  width: 18vw;
+  height: auto;
 }
 .image:hover {
   transform: scale(1.1);
 }
-@media (min-width: 600px){
-  .image{
-  width: 108px; height: auto
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .image {
+    width: 25vw;
+  }
+}
+@media (min-width: 600px) {
+  .image {
+    width: 108px;
+    height: auto;
   }
 }
