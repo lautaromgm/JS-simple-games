@@ -104,7 +104,7 @@ function createBoard() {
     card.setAttribute("data-id", i);
     card.setAttribute("id", `card${i}`);
     card.setAttribute("style", "max-width: 90%; height:auto");
-    card.addEventListener("mousedown", flipCard);
+    card.addEventListener("click", flipCard);
     card.className = "card";
     const imgId = document.querySelector(`#pos${i}`);
     imgId.append(card);
@@ -113,7 +113,7 @@ function createBoard() {
 
 function checkMatch() {
   const cards = document.querySelectorAll("#grid img");
-  cards[cardsChosenIds[0]].addEventListener("mousedown", flipCard);
+
   console.log("check for match!");
 
   if (cardsChosen[0] == cardsChosen[1]) {
@@ -131,6 +131,7 @@ function checkMatch() {
     cards[cardsChosenIds[1]].setAttribute("src", "images/blank.png");
     score -= 1;
     document.getElementById("alert").innerHTML = "-";
+    cards[cardsChosenIds[0]].addEventListener("click", flipCard);
   }
   cardsChosen = [];
   cardsChosenIds = [];
