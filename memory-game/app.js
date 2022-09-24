@@ -119,6 +119,8 @@ function checkMatch() {
   if (cardsChosen[0] == cardsChosen[1]) {
     cards[cardsChosenIds[0]].setAttribute("src", "images/black.png");
     cards[cardsChosenIds[1]].setAttribute("src", "images/black.png");
+    cards[cardsChosenIds[0]].setAttribute("class", "card block");
+    cards[cardsChosenIds[1]].setAttribute("class", "card block");
     cards[cardsChosenIds[0]].removeEventListener("click", flipCard);
     cards[cardsChosenIds[1]].removeEventListener("click", flipCard);
     cardsWon.push(cardsChosen);
