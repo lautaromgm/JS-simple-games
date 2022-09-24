@@ -143,6 +143,7 @@ function startGame(difficulty) {
     document.getElementById("startMedium").innerHTML = "Medium";
     document.getElementById("startHard").innerHTML = "Hard";
     document.getElementById("startVeryHard").innerHTML = "Very Hard";
+    startGame(difficulty);
   }
 }
 
