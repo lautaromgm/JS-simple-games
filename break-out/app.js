@@ -108,10 +108,18 @@ function startGame(difficulty) {
     checkWinId = setInterval(checkWin, difficulty);
     document.getElementById("info").innerHTML = "Don't let the ball fall off!";
     playOnClick = 0;
-    document.getElementById("startEasy").innerHTML = "Stop game";
-    document.getElementById("startMedium").innerHTML = "Stop game";
-    document.getElementById("startHard").innerHTML = "Stop game";
-    document.getElementById("startVeryHard").innerHTML = "Stop game";
+    document
+      .getElementById("startEasy")
+      .setAttribute("class", "btn btn-primary hidden");
+    document
+      .getElementById("startMedium")
+      .setAttribute("class", "btn btn-primary hidden");
+    document
+      .getElementById("startHard")
+      .setAttribute("class", "btn btn-primary hidden");
+    document
+      .getElementById("startVeryHard")
+      .setAttribute("class", "btn btn-primary hidden");
     count = 0;
   } else {
     clearInterval(checkGameOverId);
@@ -292,6 +300,18 @@ function checkGameOver() {
     gameOver.play();
     music.pause();
     clearInterval(checkGameOverId);
+    document
+      .getElementById("startEasy")
+      .setAttribute("class", "btn btn-primary");
+    document
+      .getElementById("startMedium")
+      .setAttribute("class", "btn btn-primary");
+    document
+      .getElementById("startHard")
+      .setAttribute("class", "btn btn-primary");
+    document
+      .getElementById("startVeryHard")
+      .setAttribute("class", "btn btn-primary");
   }
 }
 //check for win on time interval
@@ -302,5 +322,17 @@ function checkWin() {
     music.pause();
     winSound.play();
     clearInterval(checkWinId);
+    document
+      .getElementById("startEasy")
+      .setAttribute("class", "btn btn-primary");
+    document
+      .getElementById("startMedium")
+      .setAttribute("class", "btn btn-primary");
+    document
+      .getElementById("startHard")
+      .setAttribute("class", "btn btn-primary");
+    document
+      .getElementById("startVeryHard")
+      .setAttribute("class", "btn btn-primary");
   }
 }
